@@ -2,14 +2,14 @@
     "vercel": 2,
     "builds": [
         {
-            "src": "db.json",
+            "src": "data/db.json",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "(.*)",
-            "dest": "db.json"
+            "dest": "data/db.json"
         }
     ]
 }
